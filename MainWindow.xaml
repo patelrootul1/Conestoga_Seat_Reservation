@@ -1,0 +1,153 @@
+﻿<Window x:Class="Assignment3_SeatReservation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment3_SeatReservation"
+        mc:Ignorable="d"
+        Title="ReservationSystem" Height="450" Width="1200" MinWidth="1100">
+    <Grid Background="Aqua">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1.5*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.ColumnSpan="6" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="50" 
+               FontStyle="Italic" Foreground="Red" Background="White">
+            Conestoga Ticket System
+        </Label>
+        <Label Grid.Row="1" Grid.Column="0" Name="A1Background" Content="A1" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label Grid.Row="1" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="5" BorderBrush="Black">
+            <Image Source="/icons8-seat-64.png" Height="50" Width="80" />
+        </Label>
+        <TextBlock Grid.Row="1" Grid.Column="0" Name="A1" Foreground="Black" TextAlignment="Center" Height="20" FontSize="10" VerticalAlignment="Bottom"/>
+        <Label Grid.Row="1" Grid.Column="1" Name="A2Background" Content="A2" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label Grid.Row="1" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="5" BorderBrush="Black">
+            <Image Source="/icons8-seat-64.png" Height="50" Width="80"/>
+        </Label>
+        <TextBlock Grid.Row="1" Grid.Column="1" Name="A2" Foreground="Black" TextAlignment="Center" Height="20" FontSize="10" VerticalAlignment="Bottom"/>
+        <Label Grid.Row="1" Grid.Column="2" Name="A3Background" Content="A3" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label Grid.Row="1" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="5" BorderBrush="Black">
+            <Image Source="/icons8-seat-64.png" Height="50" Width="80"/>
+        </Label>
+        <TextBlock Grid.Row="1" Grid.Column="2" Name="A3" Foreground="Black" TextAlignment="Center" Height="20" FontSize="10" VerticalAlignment="Bottom"/>
+        <Label Grid.Row="1" Grid.Column="3" Name="A4Background" Content="A4" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label Grid.Row="1" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="5" BorderBrush="Black">
+            <Image Source="/icons8-seat-64.png" Height="50" Width="80"/>
+        </Label>
+        <TextBlock Grid.Row="1" Grid.Column="3" Name="A4" Foreground="Black" TextAlignment="Center" Height="20" FontSize="10" VerticalAlignment="Bottom"/>
+        <Label Grid.Row="2" Grid.Column="0" Name="B1Background" Content="B1" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label Grid.Row="2" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="5" BorderBrush="Black">
+            <Image Source="/icons8-seat-64.png" Height="50" Width="80"/>
+        </Label>
+        <TextBlock Grid.Row="2" Grid.Column="0" Name="B1" Foreground="Black" TextAlignment="Center" Height="20" FontSize="10" VerticalAlignment="Bottom"/>
+        <Label Grid.Row="2" Grid.Column="1" Name="B2Background" Content="B2" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label Grid.Row="2" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="5" BorderBrush="Black">
+            <Image Source="/icons8-seat-64.png" Height="50" Width="80"/>
+        </Label>
+        <TextBlock Grid.Row="2" Grid.Column="1" Name="B2" Foreground="Black" TextAlignment="Center" Height="20" FontSize="10" VerticalAlignment="Bottom"/>
+        <Label Grid.Row="2" Grid.Column="2" Name="B3Background" Content="B3" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label Grid.Row="2" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="5" BorderBrush="Black">
+            <Image Source="/icons8-seat-64.png" Height="50" Width="80"/>
+        </Label>
+        <TextBlock Grid.Row="2" Grid.Column="2" Name="B3" Foreground="Black" TextAlignment="Center" Height="20" FontSize="10" VerticalAlignment="Bottom"/>
+        <Label Grid.Row="2" Grid.Column="3" Name="B4Background" Content="B4" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label Grid.Row="2" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="5" BorderBrush="Black">
+            <Image Source="/icons8-seat-64.png" Height="50" Width="80"/>
+        </Label>
+        <TextBlock Grid.Row="2" Grid.Column="3" Name="B4" Foreground="Black" TextAlignment="Center" Height="20" FontSize="10" VerticalAlignment="Bottom"/>
+        <Label Grid.Row="3" Grid.Column="0" Name="C1Background" Content="C1" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label Grid.Row="3" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="5" BorderBrush="Black">
+            <Image Source="/icons8-seat-64.png" Height="50" Width="80"/>
+        </Label>
+        <TextBlock Grid.Row="3" Grid.Column="0" Name="C1" Foreground="Black" TextAlignment="Center" Height="20" FontSize="10" VerticalAlignment="Bottom"/>
+        <Label Grid.Row="3" Grid.Column="1" Name="C2Background" Content="C2" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label Grid.Row="3" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="5" BorderBrush="Black">
+            <Image Source="/icons8-seat-64.png" Height="50" Width="80"/>
+        </Label>
+        <TextBlock Grid.Row="3" Grid.Column="1" Name="C2" Foreground="Black" TextAlignment="Center" Height="20" FontSize="10" VerticalAlignment="Bottom"/>
+        <Label Grid.Row="3" Grid.Column="2" Name="C3Background" Content="C3" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label Grid.Row="3" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="5" BorderBrush="Black">
+            <Image Source="/icons8-seat-64.png" Height="50" Width="80"/>
+        </Label>
+        <TextBlock Grid.Row="3" Grid.Column="2" Name="C3" Foreground="Black" TextAlignment="Center" Height="20" FontSize="10" VerticalAlignment="Bottom"/>
+        <Label Grid.Row="3" Grid.Column="3" Name="C4Background" Content="C4" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label Grid.Row="3" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="5" BorderBrush="Black">
+            <Image Source="/icons8-seat-64.png" Height="50" Width="80"/>
+        </Label>
+        <TextBlock Grid.Row="3" Grid.Column="3" Name="C4" Foreground="Black" TextAlignment="Center" Height="20" FontSize="10" VerticalAlignment="Bottom"/>
+        <Label Grid.Row="4" Grid.Column="0" Name="D1Background" Content="D1" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label Grid.Row="4" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="5" BorderBrush="Black">
+            <Image Source="/icons8-seat-64.png" Height="50" Width="80"/>
+        </Label>
+        <TextBlock Grid.Row="4" Grid.Column="0" Name="D1" Foreground="Black" TextAlignment="Center" Height="20" FontSize="10" VerticalAlignment="Bottom"/>
+        <Label Grid.Row="4" Grid.Column="1" Name="D2Background" Content="D2" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label Grid.Row="4" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="5" BorderBrush="Black">
+            <Image Source="/icons8-seat-64.png" Height="50" Width="80"/>
+        </Label>
+        <TextBlock Grid.Row="4" Grid.Column="1" Name="D2" Foreground="Black" TextAlignment="Center" Height="20" FontSize="10" VerticalAlignment="Bottom"/>
+        <Label Grid.Row="4" Grid.Column="2" Name="D3Background" Content="D3" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label Grid.Row="4" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="5" BorderBrush="Black">
+            <Image Source="/icons8-seat-64.png" Height="50" Width="80"/>
+        </Label>
+        <TextBlock Grid.Row="4" Grid.Column="2" Name="D3" Foreground="Black" TextAlignment="Center" Height="20" FontSize="10" VerticalAlignment="Bottom"/>
+        <Label Grid.Row="4" Grid.Column="3" Name="D4Background" Content="D4" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label Grid.Row="4" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="5" BorderBrush="Black">
+            <Image Source="/icons8-seat-64.png" Height="50" Width="80"/>
+        </Label>
+        <TextBlock Grid.Row="4" Grid.Column="3" Name="D4" Foreground="Black" TextAlignment="Center" Height="20" FontSize="10" VerticalAlignment="Bottom"/>
+        <Label Grid.Row="1" Grid.Column="4" Content="Enter Your Name:"  Margin="5 20 10 0"></Label>
+        <TextBox Grid.Row="1" Grid.Column="4" Background="White" Height="20" Name="NameTextbox" Width="150" Margin="110 -17 10 0"></TextBox>
+        <Label Grid.Row="1" Grid.Column="4" Content="Select Seat Number:" Margin="5 50 10 0"></Label>
+        <ComboBox Grid.Row="1" Foreground="Black" Grid.Column="4" Width="110" Height="20" Margin="90 40 0 0" Name="SeatCombo"  SelectionChanged="SeatCombo_SelectionChanged">
+            <ComboBoxItem Content="Choose Below" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <ComboBoxItem Content="A1" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <ComboBoxItem Content="A2" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <ComboBoxItem Content="A3" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <ComboBoxItem Content="A4" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <ComboBoxItem Content="B1" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <ComboBoxItem Content="B2" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <ComboBoxItem Content="B3" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <ComboBoxItem Content="B4" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <ComboBoxItem Content="C1" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <ComboBoxItem Content="C2" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <ComboBoxItem Content="C3" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <ComboBoxItem Content="C4" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <ComboBoxItem Content="D1" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <ComboBoxItem Content="D2" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <ComboBoxItem Content="D3" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <ComboBoxItem Content="D4" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        </ComboBox>
+        <Button Grid.Row="2" Grid.Column="4"  Background="Green" Foreground="Yellow"  Height="30" Width="150" FontSize="20" Content="Reserve"
+                HorizontalAlignment="Center" VerticalAlignment="Top" Name="reserve" Click="reserve_Click"/>
+        <Button Grid.Row="2" Grid.Column="4"  Background="Red" Foreground="Black"  Height="30" Width="150" FontSize="20" Content="Delete"
+                HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 15 0 0" Name="delete" Click="delete_Click"/>
+        <Button Grid.Row="3" Grid.Column="4"  Background="Orange" Foreground="Green"  Height="30" Width="150" FontSize="20" Content="Clear"
+                HorizontalAlignment="Center" VerticalAlignment="Top" Name="clear" Click="clear_Click"/>
+        <Button Grid.Row="3" Grid.Column="4"  Background="Violet" Foreground="Black"  Height="30" Width="80" FontSize="20" Content="LINQ #1"
+                HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0 15 0 0" Name="linq1" Click="linq1_Click"/>
+        <Button Grid.Row="3" Grid.Column="4"  Background="Violet" Foreground="Black"  Height="30" Width="80" FontSize="20" Content="LINQ #2"
+                HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 15 0 0" Name="linq2" Click="linq2_Click"/>
+        <Button Grid.Row="3" Grid.Column="4"  Background="Violet" Foreground="Black"  Height="30" Width="80" FontSize="20" Content="LINQ #3"
+                HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 15 0 0" Name="linq3" Click="linq3_Click" />
+        <Label Grid.Row="1" Grid.Column="5" Grid.RowSpan="5" Background="White" Name="linq">
+        </Label>
+        <Button Grid.Row="4" Grid.Column="4"  Background="Pink" Foreground="Black"  Height="30" Width="80" FontSize="20" Content="Save"
+                HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30 15 0 0" Name="serialize" Click="serialize_Click" />
+        <Button Grid.Row="4" Grid.Column="4"  Background="Pink" Foreground="Black"  Height="30" Width="80" FontSize="20" Content="Load"
+                HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 15 30 0" Name="deserialize" Click="deserialize_Click" />
+        
+        
+
+    </Grid>
+</Window>
